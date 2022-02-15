@@ -24,3 +24,9 @@ TODO: Add details on how to use the application
 
 TODO: Add assumptions. If any?
 
+
+## Technologies
+
+Language: NodeJs
+Framework: ExpressJs
+
