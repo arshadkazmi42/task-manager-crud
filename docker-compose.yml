@@ -1,0 +1,27 @@
+services:
+  web:
+    build:
+      context: ./
+      target: dev
+    volumes:
+      - .:/src
+    command: npm run dev
+    ports: 
+      - "8000:8000"
+    environment:
+      NODE_ENV: development
+      DATABASE_HOST: 172.17.0.1
+  mysql:
+    image: mysql
+    container_name: mysql-server
+    ports:
+      - 3306:3306
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/dump.sql
+    environment:
+      MYSQL_HOST: localhost
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dataminr
+      MYSQL_USER: dataminr
+      MYSQL_PASSWORD: dataminr
+

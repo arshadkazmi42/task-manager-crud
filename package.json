@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
     "pretest": "eslint --ignore-path .gitignore .",
-    "test": "node_modules/mocha/bin/mocha tests/*"
+    "test": "node_modules/mocha/bin/mocha tests/*",
+    "dev": "node index.js"
   },
   "author": "Arshad Kazmi",
   "license": "MIT",
