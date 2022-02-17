@@ -36,6 +36,13 @@ docker-compose up
 docker-compose down
 ```
 
+- Remove images
+
+```
+docker rmi mysql
+docker rmi task-manager-crud_web
+```
+
 
 ### Setup Manual
 
