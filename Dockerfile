@@ -1,17 +1,13 @@
-FROM node:14 as base
+FROM node:14
 
 WORKDIR /src
 
-COPY package*.json ./
-
-EXPOSE 8000
-
-FROM base as dev
-
-ENV NODE_ENV=development
+COPY . .
 
 RUN npm install
 
-copy . .
+ENV NODE_ENV=development
 
-CMD ["node", "index.js"]
+EXPOSE 8000
+
+CMD ["npm", "run", "dev"]
