@@ -69,7 +69,7 @@ class TaskListTask {
   }
 
 
-  async deletAsync() {
+  async deleteAsync() {
     
     const query =`DELETE FROM ${TABLE_NAME} WHERE task_lists_id = ? AND tasks_id = ?`;
     const values = [this.taskListId, this.taskId];

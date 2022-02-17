@@ -87,7 +87,7 @@ externals.deleteAsync = async (req, res) => {
 
   const task = new Task(id);
 
-  await task.deletAsync();
+  await task.deleteAsync();
 
   return res.send({
     success: true

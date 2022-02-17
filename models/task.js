@@ -86,7 +86,7 @@ class Task {
   }
 
 
-  async deletAsync() {
+  async deleteAsync() {
     
     const query = `DELETE FROM ${TABLE_NAME} WHERE id = ?`;
     const values = [this.id];

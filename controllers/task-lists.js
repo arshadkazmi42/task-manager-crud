@@ -83,7 +83,7 @@ externals.deleteAsync = async (req, res) => {
 
   const taskList = new TaskList(id);
 
-  await taskList.deletAsync();
+  await taskList.deleteAsync();
 
   return res.send({
     success: true
