@@ -15,6 +15,12 @@ Simple task manager app with Task list containing list of tasks
 
 - Node Application Runs on port 8000, (make sure you don't have anything running on that port)
 
+- Clone the repository
+
+```
+git clone https://github.com/arshadkazmi42/task-manager-crud
+```
+
 
 ### Using docker-compose
 
