@@ -1,5 +1,3 @@
-> Note: this file is best viewable in a Markdown Viewer https://dillinger.io/
-
 # Task Manager
 
 Simple task manager app with Task list containing list of tasks
